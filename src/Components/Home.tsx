@@ -2,14 +2,55 @@ import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import type { Container, Engine } from "tsparticles-engine";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
     <div style={{ position: "relative" }}>
       <ParticleComponent />
-      <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
-        {/* Your other content goes here */}
-        <h1>Your Content</h1>
+      <div
+        style={{
+          position: "relative",
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: 2,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          top: "320px",
+          flexDirection: "column",
+        }}
+      >
+        <h1>
+          <b>Hi, I'm Kulshresth Jangid</b>
+        </h1>
+        <Typewriter
+          onInit={(typewriter) => {
+            const strings = [
+              "Software Engineer",
+              "Full Stack Developer",
+              // Add more strings as needed
+            ];
+
+            typewriter
+              .typeString(strings[0])
+              .callFunction(() => {
+                console.log("String typed out!");
+              })
+              .pauseFor(2500)
+              .deleteAll()
+              .callFunction(() => {
+                console.log("All strings were deleted");
+              })
+              .typeString(strings[1])
+              .callFunction(() => {
+                console.log("Second string typed out!");
+              })
+              // Continue with additional strings if needed
+              .start();
+          }}
+        />
       </div>
     </div>
   );
@@ -28,7 +69,7 @@ const ParticleComponent = () => {
       options={{
         background: {
           color: {
-            value: "#000",
+            value: "#ffffff",
           },
         },
         fpsLimit: 120,
@@ -36,7 +77,7 @@ const ParticleComponent = () => {
           events: {
             onClick: {
               enable: true,
-              mode: "push",
+              mode: "",
             },
             resize: true,
           },
@@ -52,10 +93,10 @@ const ParticleComponent = () => {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#000",
           },
           links: {
-            color: "#ffffff",
+            color: "#000",
             distance: 200,
             enable: true,
             opacity: 0.5,
@@ -68,13 +109,13 @@ const ParticleComponent = () => {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 900,
             },
             value: 80,
           },

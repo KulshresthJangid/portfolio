@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
+      <div style={{ marginTop: '10px' }} className="content">
+        <Home />
+      </div>
     </div>
   );
 }
