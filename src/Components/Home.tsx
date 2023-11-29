@@ -26,11 +26,18 @@ const Home = () => {
           <b>Hi, I'm Kulshresth Jangid</b>
         </h1>
         <Typewriter
+          options={{
+            loop: true,
+          }}
           onInit={(typewriter) => {
             const strings = [
               "Software Engineer",
               "Full Stack Developer",
-              // Add more strings as needed
+              "NodeJs Developer",
+              "Java Developer",
+              "Backend Developer",
+              "Video Editor",
+              "Freelance Developer",
             ];
 
             typewriter
@@ -38,12 +45,36 @@ const Home = () => {
               .callFunction(() => {
                 console.log("String typed out!");
               })
-              .pauseFor(2500)
+              .pauseFor(2000)
               .deleteAll()
               .callFunction(() => {
                 console.log("All strings were deleted");
               })
               .typeString(strings[1])
+              .callFunction(() => {
+                console.log("Second string typed out!");
+              })
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString(strings[2])
+              .callFunction(() => {
+                console.log("Second string typed out!");
+              })
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString(strings[3])
+              .callFunction(() => {
+                console.log("Second string typed out!");
+              })
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString(strings[4])
+              .callFunction(() => {
+                console.log("Second string typed out!");
+              })
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString(strings[5])
               .callFunction(() => {
                 console.log("Second string typed out!");
               })
