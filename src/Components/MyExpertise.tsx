@@ -9,8 +9,8 @@ const MyExpertise = () => {
         style={{
           width: "100%",
           background: "",
-          display: 'flex',
-          justifyContent: 'center'
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         <div
@@ -20,39 +20,81 @@ const MyExpertise = () => {
             alignContent: "center",
           }}
         >
-          <div className="software-development-expertise expertise" style={{borderRightWidth: '2px'}}>
+          <div
+            className="software-development-expertise expertise"
+            style={{ borderRightWidth: "2px" }}
+          >
             <div className="heading">
-              <img className="expertise-icon" src="/images/backend.png" alt="image of backend" />
-              <h1><strong>Backend Development</strong></h1>
+              <img
+                className="expertise-icon"
+                src="/images/backend.png"
+                alt="image of backend"
+              />
+              <div className="content-heading">
+                <h1>
+                  <strong>Backend Development</strong>
+                </h1>
+                <h2>Spring Boot, NodeJs, MeteorJs, Django</h2>
+              </div>
             </div>
             <div className="content">
               <p>
-                Experience in both functional and OOP: Java, Python, JavaScript,
-                TypeScript.
+                Specialized in designing and implementing backend architectures,
+                I bring a wealth of experience in \
+                <strong> Spring Boot, NodeJs, MeteorJs, Django</strong> to
+                deliver efficient and high-performance solutions.
               </p>
             </div>
           </div>
-          <div className="backend-development-expertise expertise" style={{borderLeftWidth: '2px'}}>
+          <div
+            className="backend-development-expertise expertise"
+            style={{ borderLeftWidth: "2px" }}
+          >
             <div className="heading">
-              <img className="expertise-icon" style={{height: '50px'}} src="/images/frontend.png" alt="image of backend" />
-              <h1>Frontend Development</h1>
+              <img
+                className="expertise-icon"
+                style={{ height: "50px" }}
+                src="/images/frontend.png"
+                alt="image of backend"
+              />
+              <div className="content-heading">
+                <h1>
+                  <strong>Frontend Development</strong>
+                </h1>
+                <h2>ReactJs, AngularJs</h2>
+              </div>
+              <h1></h1>
             </div>
             <div className="content">
               <p>
-                Experience in both functional and OOP: Java, Python, JavaScript,
-                TypeScript.
+                Proficient in a range of front-end technologies, including
+                <strong> ReactJs, AngularJs, VueJs</strong>, I leverage the
+                latest tools to create responsive and dynamic web applications.
               </p>
             </div>
           </div>
-          <div className="frontend-development-expertise expertise" style={{borderLeftWidth: '1px'}}>
+          <div
+            className="frontend-development-expertise expertise"
+            style={{ borderLeftWidth: "1px" }}
+          >
             <div className="heading">
-              <img className="expertise-icon" src="/images/backend.png" alt="image of backend" />
-              <h1>Backend Development</h1>
+              <img
+                className="expertise-icon"
+                src="/images/backend.png"
+                alt="image of backend"
+              />
+              <div className="content-heading">
+                <h1>
+                  <strong>App Development</strong>
+                </h1>
+                <h2>Flutter, React Native</h2>
+              </div>
             </div>
             <div className="content">
               <p>
-                Experience in both functional and OOP: Java, Python, JavaScript,
-                TypeScript.
+                Experienced in integrating third-party APIs, services, and
+                hardware components, I ensure that apps not only meet user
+                expectations but also seamlessly interact with external systems.
               </p>
             </div>
           </div>

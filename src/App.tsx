@@ -23,8 +23,8 @@ function App() {
           flexDirection: "column"
         }}
       >
-        <div style={{ marginTop: "250px" }} className="content">
           <Home />
+        <div style={{ marginTop: "250px" }} className="content">
         </div>
           <MyExpertise />
       </div>
