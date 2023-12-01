@@ -8,7 +8,13 @@ import AnimatedCursor from "react-animated-cursor";
 function App() {
   return (
     <div className="App">
-      <AnimatedCursor color="10, 0, 0" innerSize={8} outerSize={35} />
+      <AnimatedCursor
+        color="10, 0, 0"
+        innerSize={8}
+        outerSize={30}
+        innerScale={1}
+        outerScale={1.7}
+      />
       <Navbar />
       <ParticleComponent />
       <div
