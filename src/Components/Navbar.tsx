@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
       <header style={{ zIndex: 2 }}>
         <a className="logo" href="#">
-          Logo
+          KJ
         </a>
         <div
           id="toggle"
