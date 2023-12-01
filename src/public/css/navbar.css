@@ -86,6 +86,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: row;
+    right: 33px;
 }
 
 #navbar ul li {

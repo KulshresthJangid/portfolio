@@ -5,7 +5,7 @@ const MyExpertise = () => {
   return (
     <>
       <section
-        className="expertises"
+        id="expertise" className="expertises"
         // style={{
         //   width: "100%",
         //   background: "",

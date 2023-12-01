@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header style={{zIndex: 2}}>
+      <header style={{ zIndex: 2 }}>
         <a className="logo" href="#">
           Logo
         </a>
@@ -21,13 +21,16 @@ const Navbar = () => {
           onClick={handleToggleClick}
           className={isToggleActive && isNavbarActive ? "active" : ""}
         ></div>
-        <div id="navbar" className={isToggleActive && isNavbarActive ? "active" : ""}>
+        <div
+          id="navbar"
+          className={isToggleActive && isNavbarActive ? "active" : ""}
+        >
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#expertise">Expertise</a>
             </li>
             <li>
               <a href="#">Experience</a>
@@ -39,7 +42,12 @@ const Navbar = () => {
               <a href="#">Contact</a>
             </li>
             <li>
-              <a className="" href="#">Resume</a>
+              <a
+                className=""
+                target="_blank"
+                href="https://drive.google.com/file/d/1IWd6uUh6GPDCGLRZr4M7X3rSsswkwtiB/view?usp=sharing"
+              >Resume
+              </a>
             </li>
           </ul>
         </div>

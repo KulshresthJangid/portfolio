@@ -7,6 +7,7 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
   return (
     <section
+    id="home"
       style={{
         minHeight: "100vh",
         display: "flex",

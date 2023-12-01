@@ -7,7 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{height:'1500px'}}>
       <AnimatedCursor
         color="10, 0, 0"
         innerSize={8}
