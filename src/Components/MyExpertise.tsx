@@ -6,13 +6,21 @@ const MyExpertise = () => {
     <>
       <section
         className="expertises"
+        // style={{
+        //   width: "100%",
+        //   background: "",
+        //   display: "flex",
+        //   justifyContent: "center",
+        // }}
         style={{
-          width: "100%",
-          background: "",
+          minHeight: "20vh",
           display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
           justifyContent: "center",
         }}
       >
+        <h1 style={{marginBottom: '90px', fontWeight: 'bold'}}>My Expertises</h1>
         <div
           className="main-expertise"
           style={{

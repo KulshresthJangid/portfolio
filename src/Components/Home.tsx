@@ -9,11 +9,11 @@ const Home = () => {
     <section
       style={{
         minHeight: "100vh",
-        marginTop: "500px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        // background: 'black'
       }}
     >
       <h1>

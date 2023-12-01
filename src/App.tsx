@@ -3,10 +3,12 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import MyExpertise from "./Components/MyExpertise";
 import ParticleComponent from "./Components/Particles";
+import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   return (
     <div className="App">
+      <AnimatedCursor color="10, 0, 0" innerSize={8} outerSize={35} />
       <Navbar />
       <ParticleComponent />
       <div
@@ -20,13 +22,11 @@ function App() {
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
-          flexDirection: "column"
+          flexDirection: "column",
         }}
       >
-          <Home />
-        <div style={{ marginTop: "250px" }} className="content">
-        </div>
-          <MyExpertise />
+        <Home />
+        <MyExpertise />
       </div>
     </div>
   );
