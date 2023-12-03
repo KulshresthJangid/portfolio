@@ -1,5 +1,7 @@
 import React from "react";
 import "../public/css/expertise.css";
+import { frontEnd } from "../public/images/frontend";
+import { backendImg } from "../public/images/backend";
 
 const MyExpertise = () => {
   return (
@@ -35,7 +37,7 @@ const MyExpertise = () => {
             <div className="heading">
               <img
                 className="expertise-icon"
-                src="/images/backend.png"
+                src={frontEnd}
                 alt="image of backend"
               />
               <div className="content-heading">
@@ -62,7 +64,7 @@ const MyExpertise = () => {
               <img
                 className="expertise-icon"
                 style={{ height: "50px" }}
-                src="/images/frontend.png"
+                src={backendImg}
                 alt="image of backend"
               />
               <div className="content-heading">
